@@ -33,6 +33,11 @@ class Euro(thinkbayes2.Suite):
 
     def __init__(self, hypos, y, label=''):
         """
+        Euro constructor
+        Args:
+            hypos (list): Range of float
+            y (float): Observation bias
+            label (str): Label (for plot)
         """
 
         super().__init__(hypos)
@@ -113,7 +118,7 @@ def main():
     always wrong either always right. However, as y is near 0.5, their is a lot
     of uncertainty. The device is either wrong or either right. Therefore, the
     posteriors are well spread.
-    When y = 0.5, the data are not informative at all. Thus, all hypothesis are 
+    When y = 0.5, the data are not informative at all. Thus, all hypothesis are
     equiprobable.
     """
 
